@@ -13,6 +13,19 @@
 	</dependency>
   </dependencies>
   
+  <distributionManagement>
+	<repository>
+		<id>deploy-release</id>
+		<name>Internal Releases</name>
+		<url>http://localhost:8081/repository/MyReleaseRepo/</url>
+	</repository>
+	<snapshotRepository>
+		<id>deploy-snap</id>
+		<name>Internal Snapshot</name>
+		<url>http://localhost:8081/repository/MySnapshotRepo/</url>
+	</snapshotRepository>
+  </distributionManagement>
+	
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
